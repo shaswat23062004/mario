@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #74b6f3;
+}
+
+.game{
+    width: 100000px;
+    height: 500px;
+    border: 3px solid black;
+    overflow: hidden;
+    background: linear-gradient(#5c94fc,#87ceeb);
+    position: relative;
+}
+.world{
+    width: 20000px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.ground{
+    width: 100%;
+    height: 70px;
+    background-color: saddlebrown;
+    position: absolute;
+    bottom: 0;
+}
+.pipes{
+    display: flex;
+    align-items: flex-end;
+    gap: 200px;
+    position: absolute;
+    left: 180px;
+    bottom: 70px;
+    z-index: 1;
+    height: 130px;
+}
+.pipe{
+    display: block;
+    width: 90px;
+    height: 80px;
+    object-fit: fill;
+}
+.pipe1{
+    left: 120px;
+    height: 100px;
+}
+.pipe2{
+    height: 50px;
+}
+.pipe3{
+    height: 130px;
+}
+.player{
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    /* z-index: 2; */
+    background: url("mario.webp") center / contain no-repeat;
+}
+.mushroom{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    object-fit: contain;
+    bottom: 70px;
+    z-index: 2;
+} 
+.m1{
+    left: 120px;
+    bottom: 85px;
+}
+.m2{
+    left: 200px;
+    bottom: 200px;
+}
+.m3{
+    left: 380px;
+    bottom: 90px;
+}
+.m4{
+    left: 490px;
+    bottom: 140px;
+}
+.m5{
+    left: 600px;
+    bottom: 90px;
+}
+.m6{
+    left: 770px;
+    bottom: 250px;
+}
+.m7{
+    left: 920px;
+    bottom: 230px;
+}
+.m8{
+    left: 1080px;
+    bottom: 220px;
+}
+.cloud{
+    width: 100px;
+    height: 60px;
+    background: white;
+    border-radius: 50px;
+    position: absolute;
+    /* left: 180px; */
+    top: 60px;
+}
+.c1{
+    left: 150px;
+    top: 80px;
+}
+.c2{
+    left: 400px;
+    top: 50px;
+}
+.c4{
+    left: 1050px;
+}
+.c3{
+    left: 870px;
+    top: 120px ;
+}
+.c5{
+    left: 650px;
+    top: 75px;
+}
+
+.brick{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border: 2px solid yellowgreen;
+    position: absolute;
+    top: 180px;
+}
+.b1{
+    left: 1480px;
+}
+.b2{
+    left: 1500px;
+}
